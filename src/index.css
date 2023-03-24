@@ -1,0 +1,14 @@
+*,
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    text-transform: capitalize
+}
