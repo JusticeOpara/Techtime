@@ -10,5 +10,5 @@ html {
 body {
     background-color: #fff;
     color: #333;
-    text-transform: capitalize
+    font-family: 'Satoshi', sans-serif;
 }
