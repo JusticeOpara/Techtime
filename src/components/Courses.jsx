@@ -9,28 +9,31 @@ import CourseImg6 from '../../assets/courses6.png'
 
 
 
-const CardCourses = ({ image, topic, path, rate, time, lessons, name, prize }) =>{
+const CardCourses = ({ image, topic, path, rate, time, lessons, name, prize }) => {
     return (
 
         <div className="courses-body">
 
             <div className="courses-image">{image}</div>
 
-            <div className="tag">
-                <p className="courses-path">{path}</p>
-                <p className="courses-rate">{rate}</p>
-            </div>
+            <div className="courses-info">
+                <div className="tag">
+                    <p className="courses-path">{path}</p>
+                    <p className="courses-rate">{rate}</p>
+                </div>
 
-            <h2 className="courses-topic">{topic}</h2>
+                <h2 className="courses-topic">{topic}</h2>
 
-            <div className="tag">
-                <p className="courses-time">{time}</p>
-                <p className="courses-lessons">{lessons}</p>
-            </div>
+                <div className="tag">
+                    <p className="courses-time">{time}</p>
+                    <p className="courses-lessons">{lessons}</p>
+                </div>
 
-            <div className="tag">
-                <p className="courses-name">{name}</p>
-                <p className="courses-prize">{prize}</p>
+                <div className="tag">
+                    <p className="courses-name">{name}</p>
+                    <p className="courses-prize">{prize}</p>
+
+                </div>
 
             </div>
 
@@ -52,18 +55,18 @@ export default function Courses() {
             </div>
 
             <div className="courses-subheader">
-                    <p>All categories</p>
-                    <p>Design</p>
-                    <p>Development</p>
-                    <p>Marketing</p>
-                </div>
+                <p>All categories</p>
+                <p>Design</p>
+                <p>Development</p>
+                <p>Marketing</p>
+            </div>
             <div className="courses-template">
 
                 <div className="flex-row">
                     <CardCourses
                         image={<img src={CourseImg5} className="courseImg" alt="courses-image" />}
                         topic="introduction to outroom  marketing analysis"
-                        path="design"
+                        path="market"
                         rate="4.7k(32.7k+)"
                         time="23hrs 50mins"
                         lessons="15 lessons"
@@ -75,7 +78,7 @@ export default function Courses() {
                     <CardCourses
                         image={<img src={CourseImg2} className="courseImg" alt="courses-image" />}
                         topic="introduction to  new marketing audience "
-                        path="design"
+                        path="market"
                         rate="4.7k(32.7k+)"
                         time="23hrs 50mins"
                         lessons="15 lessons"
@@ -106,7 +109,7 @@ export default function Courses() {
                     <CardCourses
                         image={<img src={CourseImg4} className="courseImg" alt="courses-image" />}
                         topic="introduction to javascript, git & GitHub"
-                        path="design"
+                        path="developer"
                         rate="4.7k(32.7k+)"
                         time="23hrs 45mins"
                         lessons="15 lessons"
@@ -131,7 +134,7 @@ export default function Courses() {
                     <CardCourses
                         image={<img src={CourseImg6} className="courseImg" alt="courses-image" />}
                         topic="introduction to live  marketing analysis"
-                        path="design"
+                        path="marketing"
                         rate="4.7k(32.7k+)"
                         time="23hrs 46mins"
                         lessons="15 lessons"

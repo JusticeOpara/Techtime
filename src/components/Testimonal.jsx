@@ -1,6 +1,13 @@
 import React from "react"
 import { useState } from "react"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
+//   const swiper = new Swiper(...);
 
 
 
@@ -37,9 +44,9 @@ export default function Testimonal() {
 
                 <div onClick={handlePrevious}>Previous</div>
                 <div onClick={handleNext}>next</div>
-        
-                    {/* <p>{index}</p> */}
-                
+
+                {/* <p>{index}</p> */}
+
 
             </div>
         )
@@ -61,51 +68,117 @@ export default function Testimonal() {
 
 
             <div className="testimony-item">
-                
-                <TestimonalCard
-                
-                    text="high-defination video is video of higher resolution and quality than standard definition. 
-                          high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
-                              the best and largest all-in-one online tutoring platform in the worldd definition. 
-                                          high-defination video is video of higher resolution and quality than standard definition.
-                                  build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
-
-                    image="x"
-
-                    career="software developer"
-                    name="justice opara"
-
-                />
-
-                <TestimonalCard
-                    text="high-defination video is video of higher resolution and quality than standard definition. 
-                          high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
-                              the best and largest all-in-one online tutoring platform in the worldd definition. 
-                                          high-defination video is video of higher resolution and quality than standard definition.
-                                  build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
-
-                    image="x"
-                    career="software developer"
-                    name="justice opara"
-                />
-                
-                <TestimonalCard
-                    text="high-defination video is video of higher resolution and quality than standard definition. 
-                          high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
-                              the best and largest all-in-one online tutoring platform in the worldd definition. 
-                                          high-defination video is video of higher resolution and quality than standard definition.
-                                  build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
-
-                    image="x"
-                    career="software developer"
-                    name="justice opara"
-                /> 
 
 
+                <Swiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    loop={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                        rotate: 0,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 2.5,
+                    }}
+                    pagination={{ el: '.swiper-pagination', clickable: true }}
+                    navigation={{
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                        clickable: true,
+                    }}
+                    modules={[EffectCoverflow, Pagination, Navigation]}
+                    className="swiper_container">
+
+
+
+                    <SwiperSlide>
+                        <TestimonalCard
+
+                            text="high-defination video is video of higher resolution and quality than standard definition. 
+                       high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
+                        the best and largest all-in-one online tutoring platform in the worldd definition. 
+                      high-defination video is video of higher resolution and quality than standard definition.
+                      build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
+
+                            image="x"
+
+                            career="software developer"
+                            name="justice opara"
+
+                        />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <TestimonalCard
+
+                            text="high-defination video is video of higher resolution and quality than standard definition. 
+                       high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
+                        the best and largest all-in-one online tutoring platform in the worldd definition. 
+                      high-defination video is video of higher resolution and quality than standard definition.
+                      build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
+
+                            image="x"
+
+                            career="software developer"
+                            name="justice opara"
+
+                        />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <TestimonalCard
+
+                            text="high-defination video is video of higher resolution and quality than standard definition. 
+                       high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
+                        the best and largest all-in-one online tutoring platform in the worldd definition. 
+                      high-defination video is video of higher resolution and quality than standard definition.
+                      build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
+
+                            image="x"
+
+                            career="software developer"
+                            name="justice opara"
+
+                        />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <TestimonalCard
+
+                            text="high-defination video is video of higher resolution and quality than standard definition. 
+                       high-defination video is video of higher resolution and quality than standard definition. hbuild your future with our quality education. 
+                        the best and largest all-in-one online tutoring platform in the worldd definition. 
+                      high-defination video is video of higher resolution and quality than standard definition.
+                      build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
+
+                            image="x"
+
+                            career="software developer"
+                            name="justice opara"
+
+                        />
+                    </SwiperSlide>
+
+
+                    {/* <div className="slider-controler">
+                        <div className="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline">=</ion-icon>
+                        </div>
+                        <div className="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline">+</ion-icon>
+                        </div>
+                        <div className="swiper-pagination"></div>
+                </div>*/}
+                </Swiper>
             </div>
 
 
-        </div>
+
+
+
+        </div >
 
     )
 }

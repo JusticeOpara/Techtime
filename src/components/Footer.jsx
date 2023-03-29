@@ -58,8 +58,6 @@ export default function Footer() {
                     <div className="footer-input">
 
                         <input placeholder="justice@gmail.com" />
-
-                        <p className="footer-btn">Send Message</p>
                     </div>
 
                 </div>
