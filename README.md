@@ -5,7 +5,7 @@ This project is built with swiperJS, CSS, ReactJS and I also use docker to docke
 
 ## Get Started
 
-<!-- - [👉🏼 Download and Install the Max Fleet Management APP](https://github.com/unknownaloy/max_task/raw/main/apk/max_fleet.apk) -->
+- [👉🏼 Vist website](https://endearing-begonia-0a02bc.netlify.app/)
 
 ## How to run (without docker)
 
