@@ -20,4 +20,4 @@ This project is built with swiperJS, CSS, ReactJS and I also use docker to docke
 
 - clone the git repository and cd into the directory
 - run `docker build -t myapp .`
-- run `docker-compose up`
+- run `docker run -p 5173:5173`
