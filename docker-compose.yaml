@@ -1,7 +1,8 @@
 version: "3.9"
 services:
-  src:
-    build: ./src
+  Techtime:
+    build: 
+      context: .
     container-name: TechTime
     ports:
       - "3000:3000"

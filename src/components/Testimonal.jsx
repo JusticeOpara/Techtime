@@ -1,5 +1,5 @@
 import React from "react"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, A11y } from "swiper";
 import 'swiper/css';
@@ -20,15 +20,15 @@ import Test4 from '../../assets/community10.png'
 export default function Testimonal() {
     const [isMobile, setIsMobile] = useState(false);
 
-	useEffect(() => {
-		if (window.innerWidth < 768) {
-			setIsMobile(true);
-		}
-	}, []);
+    useEffect(() => {
+        if (window.innerWidth < 768) {
+            setIsMobile(true);
+        }
+    }, []);
 
 
 
-    
+
 
     const TestimonalCard = ({ image, text }) => {
         return (
@@ -37,13 +37,12 @@ export default function Testimonal() {
 
                 <p className="testimonal-text">{text}</p>
 
-         <div className="testimonal-info"> 
+                <div className="testimonal-info">
                     <div className="testimonal-image">{image}</div>
 
-         </div> 
+                </div>
 
-
-
+                
             </div>
         )
     }
@@ -100,7 +99,7 @@ export default function Testimonal() {
                       high-defination video is video of higher resolution and quality than standard definition.
                       build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
 
-                      image={<img src={Test1} className="TestimonyImage" alt="TestimonyImage" />}
+                            image={<img src={Test1} className="TestimonyImage" alt="TestimonyImage" />}
 
 
                         />
@@ -115,14 +114,14 @@ export default function Testimonal() {
                       high-defination video is video of higher resolution and quality than standard definition.
                       build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
 
-                      image={<img src={Test2} className="TestimonyImage" alt="TestimonyImage" />}
+                            image={<img src={Test2} className="TestimonyImage" alt="TestimonyImage" />}
 
 
-                         
+
                         />
                     </SwiperSlide>
 
-                     <SwiperSlide>
+                    <SwiperSlide>
                         <TestimonalCard
 
                             text="high-defination video is video of higher resolution and quality than standard definition. 
@@ -131,11 +130,11 @@ export default function Testimonal() {
                       high-defination video is video of higher resolution and quality than standard definition.
                       build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
 
-                      image={<img src={Test3} className="TestimonyImage" alt="TestimonyImage" />}
+                            image={<img src={Test3} className="TestimonyImage" alt="TestimonyImage" />}
 
                         />
                     </SwiperSlide>
-                    
+
 
 
                     <SwiperSlide>
@@ -147,10 +146,10 @@ export default function Testimonal() {
                       high-defination video is video of higher resolution and quality than standard definition.
                       build your future with our quality education. the best and largest all-in-one online tutoring platform in the world"
 
-                      image={<img src={Test4} className="TestimonyImage" alt="TestimonyImage" />}
+                            image={<img src={Test4} className="TestimonyImage" alt="TestimonyImage" />}
 
                         />
-                    </SwiperSlide> 
+                    </SwiperSlide>
 
 
                 </Swiper>

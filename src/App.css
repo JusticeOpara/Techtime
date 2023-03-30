@@ -15,8 +15,8 @@ p {
     text-transform: capitalize;
     font-weight: 500;
     /* color: #A2A2A2; */
-    font-size:20px;
-    
+    /* font-size:20px; */
+
 }
 
 
@@ -563,7 +563,7 @@ h2 {
 
 .testimonal-text {
     background-color: #fff;
-    width: 92%;
+    width: 90%;
     height: 50%;
     /* padding-left: 5px;  */
     font-size: 13px;
@@ -575,25 +575,22 @@ h2 {
 .testimony-item {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     /* background-color: aqua; */
-
+    gap: 8px;
+    padding: 0;
     width: 100%;
     height: 65%;
-    /* z-index: 1; */
-    /* box-sizing: content-box;  */
-
 
 }
 
 .testimonal-body {
     width: 100%;
     height: 50vh;
-    background-color: #fff;
+    background-color: #fff; 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
     border-radius: 8px;
     padding: 0%;
@@ -601,10 +598,14 @@ h2 {
 
 }
 
+
+
+
 .testimonal-info {
     width: 100%;
     height: 10vh;
     padding-left: 20px;
+    /* background-color: darkorange; */
 }
 
 .testimonal-image {
@@ -889,7 +890,7 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: darkslateblue;
+        /* background-color: darkslateblue; */
 
     }
 
@@ -909,7 +910,7 @@ li {
     }
 
     .navbar {
-        background-color: darkorchid;
+        /* background-color: darkorchid; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -935,7 +936,7 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: red;
+        /* background-color: red; */
         width: 100%;
 
     }
@@ -944,7 +945,7 @@ li {
     .inner-container {
         width: 100%;
         height: 90vh;
-        background-color: yellow;
+        /* background-color: yellow; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -958,7 +959,7 @@ li {
         width: 297.58px;
         height: 30px;
         font-size: 8px;
-        background-color: yellow;
+        /* background-color: yellow; */
         text-align: center;
         line-height: 15px;
         font-style: normal;
@@ -968,7 +969,7 @@ li {
     .hero-textbox {
         width: 100%;
         height: 50%;
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -979,7 +980,7 @@ li {
 
     .hero-btn {
         width: 314px;
-        background-color: darkred;
+        /* background-color: darkred; */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -1013,7 +1014,7 @@ li {
         justify-content: space-between;
         align-items: center;
         /* gap: 12.66px; */
-        background-color: orangered;
+        /* background-color: orangered; */
         width: 331px;
         /* height: 16px; */
 
@@ -1031,7 +1032,7 @@ li {
         width: 100%;
         padding-right: 0px;
         padding-left: 0px;
-        background-color: greenyellow;
+        /* background-color: greenyellow; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1042,7 +1043,7 @@ li {
 
 
     .first-half-container {
-        background-color: goldenrod;
+        /* background-color: goldenrod; */
         width: 90%;
         height: 40vh;
         text-align: center;
@@ -1064,7 +1065,7 @@ li {
     .second-half-container {
         width: 100%;
         height: 40%;
-        background-color: pink;
+        /* background-color: pink; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1091,7 +1092,7 @@ li {
     }
 
     .class-section {
-        background-color: chartreuse;
+        /* background-color: chartreuse; */
         width: 90%;
         height: 100px;
 
@@ -1105,7 +1106,7 @@ li {
     .about-template {
         width: 100%;
         height: 100vh;
-        background-color: purple;
+        /* background-color: purple; */
         text-align: center;
 
     }
@@ -1113,7 +1114,7 @@ li {
     .inner-template {
         width: 100%;
         height: 100vh;
-        background-color: blanchedalmond;
+        background-color: #000;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1122,7 +1123,7 @@ li {
     }
 
     .firstContent {
-        background-color: #004DB3;
+        /* background-color: #004DB3; */
         width: 90%;
         height: 40vh;
         display: flex;
@@ -1134,7 +1135,7 @@ li {
     }
 
     .secondContent {
-        background-color: darkolivegreen;
+        /* background-color: darkolivegreen; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1148,7 +1149,7 @@ li {
 
     .card-body {
 
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1165,14 +1166,13 @@ li {
     }
 
     .courses-section {
-        /* width: 428px;
-    height: 980px; */
-        background-color: coral;
+    
+        /* background-color: coral; */
         gap: 10px;
         width: 100%;
-        height: 350vh;
+        height: 265vh;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
     }
 
@@ -1208,41 +1208,41 @@ li {
         display: flex;
         flex-direction: column;
         /* justify-content: space-evenly; */
-        /* align-items: center; */
-        width: 100%;
+        align-items: center; 
+        width: 80%;
         height: 28%;
 
     }
 
     .courses-template {
-        width: 90%;
-         height: 300vh; 
-        display: flex;
-        flex-direction: column;
-         justify-content:center; 
-        align-items: center;
-        /* padding: 10px; */
-        /* gap: 5px; */
-        background-color: blue;
+        width: 100%;
+        height: 250vh;
+display: flex;
+justify-content: center;
+align-items: center;
+        /* background-color: blue; */
 
     }
 
     .flex-row {
-        width: 100%;
+        width: 90%;
         display: flex;
-        flex-direction: column; 
- justify-content: center;
-        align-items: center;
-        /* margin: 0px;
-        padding: 0px; */
-        /* height: 110vh;   */
-         flex-wrap: wrap; 
-        background-color: red;
+     flex-direction: column;
+        /* justify-content: center;
+        align-items: flex-start;  */
+        margin: 0px;
+        padding: 0px; 
+         height: 130vh;   
+        flex-wrap: wrap;
+        /* background-color: red; */
+        align-content: flex-start;
+        justify-content: center;
+        
     }
 
     .courseImg {
 
-        width: 92%;
+        width: 80%;
         height: auto;
 
 
@@ -1260,7 +1260,7 @@ li {
     .testimonal-body {
         width: 100vw;
         height: 30vh;
-        background-color: red;
+        /* background-color: red; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1289,7 +1289,7 @@ li {
 
     .testimonal-section {
 
-        background: chartreuse;
+        /* background: chartreuse; */
         width: 100%;
         height: 50vh;
 
@@ -1311,7 +1311,7 @@ li {
 
     .question-description {
         width: 90%;
-        background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
         left: 345px;
         top: 295px;
         display: flex;
@@ -1319,15 +1319,18 @@ li {
         justify-content: center;
         gap: 20px;
     }
+
     .question-item {
         width: 100%;
-         background-color: red; 
+        /* background-color: red; */
         gap: 8px;
     }
-.question-part{
-    font-size: 18px;
-    font-weight: 900;
-}
+
+    .question-part {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
     .footer-container {
         width: 428px;
         height: 80vh;
@@ -1346,12 +1349,12 @@ li {
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        background-color: red;
+        /* background-color: red; */
         color: #FFF;
         line-height: 1.7;
     }
 
-    
+
 
     .footer-segment {
         display: flex;
@@ -1360,7 +1363,38 @@ li {
         padding: 0px;
         /* gap: 16px; */
     }
+    .community-container {
+        width: 100%;
+        height:80vh;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;  */
+        gap: 20px;
+        align-items: center;
+        /* background-color: #004DB3; */
+        color: #fff;
+        padding-top: 5%;
+    }
+    
+    .first-community-layout {
+        width: 90%;
+        font-size: 50%;
+        /* background-color: coral;  */
+        
+    
+    }
+    .community-btn {
+        background-color: #fff;
+        width: 50%;
+        height: 50px;
+        border-radius: 4px;
+        border: none;
+        color: #004DB3;
+        font-size: 1rem;
+        font-weight: 550;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
 
 }
-
-
