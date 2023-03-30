@@ -15,8 +15,6 @@ p {
     text-transform: capitalize;
     font-weight: 500;
     /* color: #A2A2A2; */
-    font-size:20px;
-    
 }
 
 
@@ -853,34 +851,11 @@ li {
 
 
 @media(max-width:480px) {
-    body {
+    *body {
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
     }
-
-    h1 {
-        /* color: #000F24; */
-        font-size: 24px;
-        line-height: 30px;
-        font-weight: 700;
-
-    }
-
-    p {
-        font-size: 10px;
-        line-height: 16px;
-    }
-
-    h2 {
-        /* background-color: red; */
-        font-family: 'Clash Display', sans-serif;
-        font-weight: 600;
-        line-height: 15px;
-        font-size: 16px;
-        text-transform: capitalize;
-    }
-
 
     .main-container {
 
@@ -894,7 +869,7 @@ li {
     }
 
     .hero-image {
-        width: 100%;
+        width: 30%;
         height: auto;
     }
 
@@ -987,9 +962,10 @@ li {
     }
 
     .hero-imagebox {
-        width: 85%;
+        width: 100%;
         height: auto;
-        margin: 0%;
+        background-color: #000;
+        margin-bottom: 0px;
     }
 
     .hero-image {
@@ -999,12 +975,14 @@ li {
 
 
     .hero-footer {
-        /* width: 428px;
-        height: 80px; */
-        width: 100%;
+        /* position: absolute; */
+        width: 428px;
         height: 80px;
-
-        background-color: #CCDBF0;
+        /* display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; */
+        background: #CCDBF0;
     }
 
     .sub-footer {
@@ -1012,8 +990,10 @@ li {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         /* gap: 12.66px; */
         background-color: orangered;
+
         width: 331px;
         /* height: 16px; */
 
@@ -1027,55 +1007,60 @@ li {
     }
 
     .aboutPage {
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         padding-right: 0px;
         padding-left: 0px;
         background-color: greenyellow;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-
+        align-items: center;  */
+        display: block;
         /* gap: 24px; */
+
+
     }
 
 
     .first-half-container {
         background-color: goldenrod;
         width: 90%;
-        height: 40vh;
+        height: 50vh;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 20px;
-
-
+        padding-left: 0px;
+        /* gap: 16px; */
+        /* position: absolute; */
 
     }
 
     .enrolled-student {
-        max-width: 90%;
+
+        max-width: 100%;
         height: auto;
+
+
     }
 
     .second-half-container {
         width: 100%;
-        height: 40%;
-        background-color: pink;
+        height: 50%;
+        /* background-color: purple; */
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
     }
 
     .class {
         background-color: blue;
-        width: 125.59px;
-        height: 33.59px;
-        border-radius: 4px;
-        gap: 8px;
+
+        width: 150px;
+        height: 50px;
+
+        gap: 10px;
     }
 
     .class-layout {
@@ -1084,283 +1069,23 @@ li {
         justify-content: center;
         align-items: center;
         padding: 0px;
-        gap: 15px;
+        gap: 10px;
         /* background-color: red; */
         width: 442px;
         height: 66px;
     }
 
     .class-section {
-        background-color: chartreuse;
-        width: 90%;
-        height: 100px;
-
+        /* background-color: chartreuse; */
+        width: 450px;
+        height: 140px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         /* padding: 0px; */
-        gap: 0px;
-    }
-
-    .about-template {
-        width: 100%;
-        height: 100vh;
-        background-color: purple;
-        text-align: center;
-
-    }
-
-    .inner-template {
-        width: 100%;
-        height: 100vh;
-        background-color: blanchedalmond;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-    .firstContent {
-        background-color: #004DB3;
-        width: 90%;
-        height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0px;
-
-    }
-
-    .secondContent {
-        background-color: darkolivegreen;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 5px;
-        width: 396px;
-        height: 399px;
+        /* gap: 24px; */
     }
 
 
-    .card-body {
-
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 180px;
-        height: 189px;
-
-        border-radius: 4px;
-        padding: 10px;
-
-    }
-
-    .flex-card {
-        gap: 5px;
-    }
-
-    .courses-section {
-        /* width: 428px;
-    height: 980px; */
-        background-color: coral;
-        gap: 10px;
-        width: 100%;
-        height: 350vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-        gap: 4px;
-        width: 355px;
-        height: 82px;
-    }
-
-    .courses-subheader {
-
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 16px;
-        width: 279px;
-        height: 19px;
-        font-weight: 900;
-
-    }
-
-    .courses-body {
-
-        background: #FFFFFF;
-        border-radius: 4px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-evenly; */
-        /* align-items: center; */
-        width: 100%;
-        height: 28%;
-
-    }
-
-    .courses-template {
-        width: 90%;
-         height: 300vh; 
-        display: flex;
-        flex-direction: column;
-         justify-content:center; 
-        align-items: center;
-        /* padding: 10px; */
-        /* gap: 5px; */
-        background-color: blue;
-
-    }
-
-    .flex-row {
-        width: 100%;
-        display: flex;
-        flex-direction: column; 
- justify-content: center;
-        align-items: center;
-        /* margin: 0px;
-        padding: 0px; */
-        /* height: 110vh;   */
-         flex-wrap: wrap; 
-        background-color: red;
-    }
-
-    .courseImg {
-
-        width: 92%;
-        height: auto;
-
-
-    }
-
-    .course-btn {
-        background-color: #004db3;
-        height: 50px;
-        width: 50%;
-        font-size: 16px;
-        border-radius: 6px;
-
-    }
-
-    .testimonal-body {
-        width: 100vw;
-        height: 30vh;
-        background-color: red;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        border-radius: 8px;
-        padding: 0%;
-        margin: 0%;
-
-    }
-
-    .testimonal-info {
-        width: 100%;
-        height: 10vh;
-        padding-left: 20px;
-    }
-
-    .testimonal-text {
-        background-color: #fff;
-        width: 92%;
-        height: 50%;
-        /* padding-left: 5px;  */
-        font-size: 8px;
-        line-height: 1.5;
-
-    }
-
-    .testimonal-section {
-
-        background: chartreuse;
-        width: 100%;
-        height: 50vh;
-
-        /* gap: 20px; */
-    }
-
-    .question-container {
-
-        width: 100%;
-        height: 60vh;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        /* gap:50px;  */
-        /* padding: 0px; */
-    }
-
-    .question-description {
-        width: 90%;
-        background-color: cornflowerblue;
-        left: 345px;
-        top: 295px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
-    .question-item {
-        width: 100%;
-         background-color: red; 
-        gap: 8px;
-    }
-.question-part{
-    font-size: 18px;
-    font-weight: 900;
-}
-    .footer-container {
-        width: 428px;
-        height: 80vh;
-        /* width: 100%;
-        height: 70vh; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #000F24;
-    }
-
-    .footer-bottom {
-        width: 90%;
-        height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        background-color: red;
-        color: #FFF;
-        line-height: 1.7;
-    }
-
-    
-
-    .footer-segment {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        /* gap: 16px; */
-    }
 
 }
-
-

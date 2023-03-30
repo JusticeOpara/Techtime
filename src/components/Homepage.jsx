@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from '../../assets/heroImage.png';
+// import heroImage from '../../assets/heroImage.png';
 import Dropbox from '../../assets/Dropbox svg.png';
 import monday from '../../assets/monday.png';
  import Vector from '../../assets/Vector.png';
@@ -11,7 +11,7 @@ import Avatar2 from '../../assets/Frame96.png'
 import Avater3 from '../../assets/Frame97.png'
 import Avater4 from '../../assets/Frame98.png'
 import Avater5 from '../../assets/Frame99.png'
-
+import heroImg from '../../assets/HeroImg.webp'
 
 
 
@@ -56,8 +56,11 @@ export default function Homepage() {
 
 
                 <div className="hero-container">
+
                     <div className="inner-container">
+
                         <div className="hero-textbox">
+
                             <h1 className="hero-header">Grow your skills to advance your career path</h1>
                             <p className="hero-text">
                                 Build Your Future With  Our Quality Education.The Best And Largest All-In-One Online Tutoring Platform In The World
@@ -88,11 +91,11 @@ export default function Homepage() {
 
                         </div>
 
-                        <div className="hero-imagebox">
+                     <div className="hero-imagebox"> 
 
-                            <img className="hero-image" src={heroImage} alt="HeroImage" />
+                            <img className="hero-image" src={heroImg} alt="HeroImage" />
 
-                        </div>
+                         </div> 
                     </div>
 
 

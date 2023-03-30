@@ -1,6 +1,6 @@
 import React from "react"
-import unsplash2 from '../../assets/unsplash2.png';
-import unsplash4 from '../../assets/unsplash4.png';
+// import unsplash2 from '../../assets/unsplash2.png';
+// import unsplash4 from '../../assets/unsplash4.png';
 import unsplash3 from '../../assets/unsplash3.png'
 import Frame1 from '../../assets/Frame1.png'
 import Frame2 from '../../assets/Frame2.png'
@@ -10,6 +10,7 @@ import Live from '../../assets/live.png'
 import Audio from '../../assets/audio.png'
 import Recorder from '../../assets/video.png'
 import Notes from '../../assets/notes.png'
+import Student from '../../assets/FeaturesImg.svg'
 
 
 function StatCard({ icon, tittle, description }) {
@@ -34,12 +35,16 @@ export default function About() {
             <div className="aboutPage">
 
                 <div className="first-half-container">
+
                     <h1>High quality video , audio & live classes</h1>
+
                     <p className="template-text">High-Defination Video is video of higher resolution and quality than standard definition.
                         while there’s no standard meaning for high definition, generally any standard video image</p>
 
                     <div className="view-btn">
+
                         View Courses
+
                     </div>
 
 
@@ -50,13 +55,19 @@ export default function About() {
                         <div className="class-layout">
 
                             <div className="class">
+
                                 <img src={Audio} className="class-icon" alt="frame-icon" />
+
                                 <p>audio classes</p>
+
                             </div>
 
                             <div className="class">
+
                                 <img src={Recorder} className="class-icon" alt="frame-icon" />
+
                                 <p>recorded classes</p>
+
                             </div>
 
                         </div>
@@ -64,8 +75,11 @@ export default function About() {
                         <div className="class-layout">
 
                             <div className="class">
+
                                 <img src={Live} className="class-icon" alt="frame-icon" />
+
                                 <p>live classes</p>
+                                
                             </div>
 
                             <div className="class">
@@ -82,8 +96,8 @@ export default function About() {
 
                 <div className="second-half-container">
 
-                    <img className="firstVideoImage" src={unsplash2} alt="watchvideo" />
-                    <img className="videoImage2" src={unsplash4} alt="watchvideo" />
+                    <img className="enrolled-student" src={Student} alt="watchvideo" />
+                    {/* <img className="videoImage2" src={unsplash4} alt="watchvideo" /> */}
 
                 </div>
 

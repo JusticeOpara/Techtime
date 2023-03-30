@@ -60,6 +60,8 @@ export default function Courses() {
                 <p>Development</p>
                 <p>Marketing</p>
             </div>
+
+            
             <div className="courses-template">
 
                 <div className="flex-row">

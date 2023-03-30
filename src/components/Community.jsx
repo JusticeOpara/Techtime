@@ -9,7 +9,7 @@ import ComImage7 from '../../assets/community (7).png'
 import ComImage8 from '../../assets/community (8).png'
 import ComImage9 from '../../assets/community (9).png'
 import ComImage10 from '../../assets/community10.png'
-
+import Map from'../../assets/maskGroup.png'
 
 export default function Community() {
     return (
@@ -19,8 +19,9 @@ export default function Community() {
                 <h1>Are you  ready to connect with the future talent of the tech world</h1>
                 <p>meet up with other techstars and grow together</p>
             </div>
+            {/* <img src={Map} className="ComImage" alt="ComImage" /> */}
+            <div className="second-community-layout" style={{ backgroundImage: `url(${Map})`}}>
 
-            <div className="second-community-layout">
                 <img src={ComImage} className="ComImage" alt="ComImage" />
                 <img src={ComImage2} className="ComImage" alt="ComImage" />
                 <img src={ComImage3} className="ComImage" alt="ComImage" />
@@ -37,7 +38,7 @@ export default function Community() {
 
 
 
-            {/* <p>meet up with other techstars and grow together</p> */}
+             <button className="community-btn">Join Our Community</button> 
         </div>
     )
 }
