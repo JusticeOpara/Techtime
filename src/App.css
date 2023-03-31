@@ -94,7 +94,7 @@ p {
 .hero-textbox {
     width: 50%;
     height: 70%;
-    background-color: #004DB3;
+     background-color: #004DB3; 
 
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ p {
     width: 403px;
     height: 45px;
     font-size: 15px;
-    background-color: #0043;
+    /* background-color: #0043; */
 }
 
 .hero-btn {
@@ -171,6 +171,8 @@ h2 {
     align-items: center;
     margin-right: 23px;
     margin-left: 3px;
+    font-weight: 900;
+    color: #FFF;
 
 }
 
@@ -380,6 +382,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     width: 267px;
     height: 260px;
     border-radius: 4px;
@@ -390,6 +393,10 @@ h2 {
 .card-icon {
     background-color: #004DB3;
     /* width: 30%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
 }
 
 .frame-icon {
@@ -409,8 +416,8 @@ h2 {
 /* COURSES SECTION */
 .courses-section {
     width: 100%;
-    height: 190vh;
-    background-color: palegreen;
+    height: 175vh;
+    /* background-color: palegreen; */
     background-color: #F8F9FC;
     display: flex;
     flex-direction: column;
@@ -503,13 +510,13 @@ h2 {
 
 .courses-template {
     width: 90%;
-    height: 190vh;
+    height: 155vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 24px;
-    /* background-color: palevioletred; */
+    /* background-color: palevioletred;  */
 }
 
 .course-btn {
@@ -550,7 +557,6 @@ h2 {
 
 
 .testimonal-section {
-
     background: #F8F9FC;
     width: 100%;
     height: 90vh;
@@ -558,7 +564,7 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 20px; */
+    /* gap: 50px;  */
 }
 
 .testimonal-text {
@@ -587,10 +593,10 @@ h2 {
 .testimonal-body {
     width: 100%;
     height: 50vh;
-    background-color: #fff; 
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     border-radius: 8px;
     padding: 0%;
@@ -1114,7 +1120,7 @@ li {
     .inner-template {
         width: 100%;
         height: 100vh;
-        background-color: #000;
+        /* background-color: #000; */
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1155,7 +1161,6 @@ li {
         justify-content: space-between;
         width: 180px;
         height: 189px;
-
         border-radius: 4px;
         padding: 10px;
 
@@ -1166,7 +1171,7 @@ li {
     }
 
     .courses-section {
-    
+
         /* background-color: coral; */
         gap: 10px;
         width: 100%;
@@ -1207,44 +1212,49 @@ li {
         padding-bottom: 12px;
         display: flex;
         flex-direction: column;
-        /* justify-content: space-evenly; */
-        align-items: center; 
+         justify-content: space-evenly; 
+        align-items: center;
         width: 80%;
-        height: 28%;
+        height: 30%;
+        
 
     }
 
     .courses-template {
         width: 100%;
         height: 250vh;
-display: flex;
-justify-content: center;
-align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* background-color: blue; */
-
+        /* gap: -200px; */
     }
 
     .flex-row {
+        /* background-color: red; */
         width: 90%;
         display: flex;
-     flex-direction: column;
-        /* justify-content: center;
-        align-items: flex-start;  */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
         margin: 0px;
-        padding: 0px; 
-         height: 130vh;   
-        flex-wrap: wrap;
-        /* background-color: red; */
-        align-content: flex-start;
-        justify-content: center;
-        
+        padding: 0px;
+        height: 120vh;
+        /* flex-wrap: wrap; */
+
     }
 
     .courseImg {
 
-        width: 80%;
+        width: 90%;
         height: auto;
 
+
+    }
+    .courses-info {
+        width: 90%;
+        height: 120px;
+     /* background-color: chartreuse;   */
 
     }
 
@@ -1257,10 +1267,37 @@ align-items: center;
 
     }
 
-    .testimonal-body {
+    /* .testimonal-body {
         width: 100vw;
         height: 30vh;
-        /* background-color: red; */
+         background-color: red; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 8px;
+        padding: 0%;
+        margin: 0%;
+
+    } */
+    
+    .testimony-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: aqua;  */
+        gap: 8px;
+        padding: 0;
+        width: 90%;
+        height: 45%;
+    
+    }
+    
+   
+    .testimonal-body {
+        width: 100vw;
+        height: 20vh;
+        
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -1270,6 +1307,7 @@ align-items: center;
         margin: 0%;
 
     }
+
 
     .testimonal-info {
         width: 100%;
@@ -1363,9 +1401,10 @@ align-items: center;
         padding: 0px;
         /* gap: 16px; */
     }
+
     .community-container {
         width: 100%;
-        height:80vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         /* justify-content: center;  */
@@ -1375,14 +1414,15 @@ align-items: center;
         color: #fff;
         padding-top: 5%;
     }
-    
+
     .first-community-layout {
         width: 90%;
         font-size: 50%;
         /* background-color: coral;  */
-        
-    
+
+
     }
+
     .community-btn {
         background-color: #fff;
         width: 50%;
@@ -1395,6 +1435,6 @@ align-items: center;
         overflow: hidden;
         cursor: pointer;
     }
-    
+
 
 }

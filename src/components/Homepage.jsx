@@ -78,7 +78,7 @@ export default function Homepage() {
                             {/*Avatar with card  */}
                             <div className="avatar-group">
                                 <div className="hidden-avatar">
-                                    255k+
+                                    255k+ previews
                                 </div>
                                 <img className="avatar" src={Avatar1} alt="avatar-image" />
                                 <img className="avatar" src={Avatar2} alt="avatar-image" />
