@@ -12,11 +12,13 @@ import Avater3 from '../../assets/Frame97.png'
 import Avater4 from '../../assets/Frame98.png'
 import Avater5 from '../../assets/Frame99.png'
 import heroImg from '../../assets/HeroImg.webp'
-
-
+// import { Link } from 'react-router-dom';
+import { useState } from "react";
 
 
 export default function Homepage() {
+     const [isNavExpanded, setIsNavExpanded] = useState(false)
+
 
     return (
         <>
@@ -31,13 +33,26 @@ export default function Homepage() {
                         <img className="tech-time" src={TechTime} alt="tech-tme" />
                     </div>
 
-                    <div className="nav-content">
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" className="nav-icon" 
+                 onClick={() => {setIsNavExpanded(!isNavExpanded)}}
+                    >
+                        <path fill="currentColor" d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 
+                        5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 
+                    1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"/>
+                    </svg>
 
-                        <p>Home</p>
-                        <p>About Us</p>
-                        <p>Courses</p>
-                        <p>Testimonal</p>
-                        <p>Community</p>
+                    <div className = {isNavExpanded ? "nav-menu" : "close-nav" }>
+
+                        <a className="nav-item" > Home </a>
+
+                        <a className="nav-item" >About Us</a>
+
+                        <a className="nav-item" >Courses</a>
+
+                        <a className="nav-item">Testimonal</a>
+
+                        <a className="nav-item"> Community</a>
 
                         <div className="nav-btn">
                             Enroll Now
