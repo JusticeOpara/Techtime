@@ -7,21 +7,36 @@ import Testimonal from "./components/Testimonal"
 import Community from "./components/Community"
 import Questions from "./components/Questions"
 import Footer from "./components/Footer"
+// import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+
+
 
 function App() {
 
     return (
 
+
         <div className="App">
 
             <Homepage />
-            <About/>
-            <Courses/>   
-            <Testimonal/>
-            <Community/>
-            <Questions/>
-            <Footer/>
+
+            <About />
+
+            <Courses />
+
+            <Testimonal />
+
+            <Community />
+
+            <Questions />
+
+            <Footer />
+
         </div>
+
+
+
+
     )
 }
 
