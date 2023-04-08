@@ -5,11 +5,14 @@ import Path14 from '../../assets/path14.png'
 import Instargram from '../../assets/instargram.png'
 import Youtube from '../../assets/youtube.png'
 import TechTime from '../../assets/techtime.png'
-
+import { animateScroll as scroll } from 'react-scroll';
 
 
 export default function Footer() {
 
+    const toggleHome = () => {
+        scroll.scrollToTop();
+      }
     return (
 
         <div className="footer-container" >
@@ -17,7 +20,7 @@ export default function Footer() {
             <div className="footer-bottom">
 
                 <div className="footer-segment">
-                    <img className="tech-time" src={TechTime} alt="tech-tme" />
+                    <img className="tech-time" src={TechTime} alt="tech-tme" onClick={toggleHome} />
                     <p className="footer-text">
                         reach out to us on any of our social media networks
                     </p>

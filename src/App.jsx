@@ -1,38 +1,29 @@
 import React from "react"
 import './App.css'
-import Homepage from "./components/Homepage"
-import About from "./components/About"
-import Courses from "./components/Courses"
-import Testimonal from "./components/Testimonal"
-import Community from "./components/Community"
-import Questions from "./components/Questions"
-import Footer from "./components/Footer"
-// import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import Index from "./pages"
+import SignUp from "./pages"
 
 
 
 function App() {
 
     return (
+        <BrowserRouter>
 
+            <div className="App">
+                <Routes>
 
-        <div className="App">
+                    <Route path="/" element={<Index/>} />
+                    <Route path="/sigin" element={<SignUp/>} />
 
-            <Homepage />
+                </Routes>
 
-            <About />
+            </div>
 
-            <Courses />
+        </BrowserRouter>
 
-            <Testimonal />
-
-            <Community />
-
-            <Questions />
-
-            <Footer />
-
-        </div>
 
 
 

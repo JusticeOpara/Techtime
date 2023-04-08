@@ -9,11 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "babel-runtime": "^6.18.0",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.10.0",
     "react-router-dom": "^6.10.0",
-    "swiper": "^9.2.0"
+    "react-scroll": "^1.8.9",
+    "react-scrollspy-navigation": "^1.0.3",
+    "swiper": "^9.2.0",
+    "yup": "^0.28.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

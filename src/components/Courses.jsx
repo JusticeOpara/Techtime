@@ -16,7 +16,7 @@ import Tutor6 from '../../assets/Tutor6.png'
 const CardCourses = ({ image, topic, path, rate, time, lessons, tutor, prize }) => {
     return (
 
-        <div className="courses-body" id="Courses">
+        <div className="courses-body" id="courses">
 
             <div className="courses-image">{image}</div>
 

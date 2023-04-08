@@ -2,7 +2,7 @@ import React from "react";
 // import heroImage from '../../assets/heroImage.png';
 import Dropbox from '../../assets/Dropbox svg.png';
 import monday from '../../assets/monday.png';
- import Vector from '../../assets/Vector.png';
+import Vector from '../../assets/Vector.png';
 import Group1 from '../../assets/Group1.png';
 import Group from '../../assets/Group.png'
 import TechTime from '../../assets/techtime.png'
@@ -13,11 +13,33 @@ import Avater4 from '../../assets/Frame98.png'
 import Avater5 from '../../assets/Frame99.png'
 import heroImg from '../../assets/HeroImg.webp'
 // import { Link } from 'react-router-dom';
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll'
+import { Link as LinkR } from "react-router-dom"
+
 
 
 export default function Homepage() {
-     const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
+
+    const [scrollNav, setScrollNav] = useState(false)
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true)
+        } else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
 
 
     return (
@@ -26,33 +48,51 @@ export default function Homepage() {
 
 
 
-                <div className="navbar">
+                <div className="navbar" scrollNav={scrollNav}>
 
                     <div className="nav-logo">
 
                         <img className="tech-time" src={TechTime} alt="tech-tme" />
                     </div>
 
-                   
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" className="nav-icon" 
-                 onClick={() => {setIsNavExpanded(!isNavExpanded)}}
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" className="nav-icon"
+                        onClick={() => { setIsNavExpanded(!isNavExpanded) }}
                     >
                         <path fill="currentColor" d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 
                         5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 
                     1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z"/>
                     </svg>
 
-                    <div className = {isNavExpanded ? "nav-menu" : "close-nav" }>
+                    <div className={isNavExpanded ?  "close-nav":"nav-menu"}>
 
-                        <a className="nav-item" > Home </a>
 
-                        <a className="nav-item" >About Us</a>
 
-                        <a className="nav-item" >Courses</a>
+                        <a className="nav-item" to="home"> Home </a>
 
-                        <a className="nav-item">Testimonal</a>
+                        <Link className="nav-item" to="about"
+                            smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            
+                                About Us
 
-                        <a className="nav-item"> Community</a>
+                        </Link>
+
+                        <Link className="nav-item" to="courses"
+                            smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Courses
+                        </Link>
+
+                        <Link className="nav-item" to="testimonal"
+                            smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Testimonal
+                        </Link>
+
+                        <Link className="nav-item" to="community"
+                            smooth={true} duration={500} spy={true} exact='true' offset={-80}>
+                            Community
+                        </Link>
+
+
 
                         <div className="nav-btn">
                             Enroll Now
@@ -62,12 +102,6 @@ export default function Homepage() {
 
 
                 </div>
-
-
-
-
-
-
 
 
                 <div className="hero-container">
@@ -85,8 +119,10 @@ export default function Homepage() {
                                 <div className="now">Get Started Now</div>
 
                                 <div className="nav-btn">
-                                    Enroll Now
+                                    
+                                    <LinkR to="/SignUp">Enroll Now</LinkR>
                                 </div>
+                               
                             </div>
 
 
@@ -106,11 +142,11 @@ export default function Homepage() {
 
                         </div>
 
-                     <div className="hero-imagebox"> 
+                        <div className="hero-imagebox">
 
                             <img className="hero-image" src={heroImg} alt="HeroImage" />
 
-                         </div> 
+                        </div>
                     </div>
 
 
@@ -122,7 +158,7 @@ export default function Homepage() {
 
                 <div className="sub-footer">
 
-                 <img className="group-icon" src={Vector} alt="groupIcon" /> 
+                    <img className="group-icon" src={Vector} alt="groupIcon" />
                     <img className="group-icon" src={Group} alt="groupIcon" />
                     <img className="group-icon" src={Group1} alt="groupIcon" />
                     <img className="group-icon" src={monday} alt="groupIcon" />

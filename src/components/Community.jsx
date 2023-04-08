@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Community() {
     return (
-        <div className="community-container" id="Community">
-            <div class="first-community-layout">
+        <div className="community-container" id="community">
+            <div className="first-community-layout">
                 <h4 >JOIN OUR COMMUNITY</h4>
                 <h1>Are you  ready to connect with the future talent of the tech world</h1>
                 <p>meet up with other techstars and grow together</p>

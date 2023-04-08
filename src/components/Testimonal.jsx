@@ -49,7 +49,7 @@ export default function Testimonal() {
 
     return (
 
-        <div className="testimonal-section">
+        <div className="testimonal-section" id="testimonal">
 
             <div className="header">
                 <h1>What Our Client Are Saying</h1>
