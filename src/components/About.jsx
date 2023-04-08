@@ -32,7 +32,7 @@ export default function About() {
 
     return (
         <>
-            <div className="aboutPage" id="About">
+            <div className="aboutPage" id="about">
 
                 <div className="first-half-container">
 
